@@ -15,22 +15,27 @@
                         @csrf
                         <input type="hidden" name="tipo" value="{{ $tipo }}">
                         <div class="form-group">
-                            <label for="exampleFormControlFile1">Foto principal</label>
-                            <input type="file" name="foto_principal" class="form-control-file" id="exampleFormControlFile1">
+                            <label for="fotoprincipal">Foto principal</label>
+                            <input type="file" name="foto_principal" class="form-control-file" id="fotoprincipal">
                           </div>
 
                         <div class="form-group">
-                          <label for="exampleFormControlInput1">Título</label>
-                          <input type="text" name="titulo" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                          <label for="titulo">Título</label>
+                          <input type="text" name="titulo" class="form-control" id="titulo" placeholder="Ingrese..">
                         </div>
                         
                         <div class="form-group">
-                          <label for="exampleFormControlTextarea1">Detalle</label>
-                          <textarea class="form-control" name="detalle" id="exampleFormControlTextarea1" rows="3"></textarea>
+                          <label for="detalle">Detalle</label>
+                          <textarea class="form-control" name="detalle" id="detalle" rows="3"></textarea>
                         </div>
                         <div class="form-group">
-                            <label for="exampleFormControlFile1">Foto secundario</label>
-                            <input type="file" name="foto_secundario" class="form-control-file" id="exampleFormControlFile1">
+                            <label for="fotosecundario">Foto secundario</label>
+                            <input type="file" name="foto_secundario" class="form-control-file" id="fotosecundario">
+                          </div>
+
+                          <div class="form-group">
+                            <label for="fotofondo">Foto de fondo</label>
+                            <input type="file" name="foto_fondo" class="form-control-file" id="fotofondo">
                           </div>
                           <button type="submit" class="btn btn-primary">Guardar</button>
                       </form>

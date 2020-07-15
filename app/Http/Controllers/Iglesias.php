@@ -26,6 +26,7 @@ class Iglesias extends Controller
         $i->titulo=$request->titulo;
         $i->detalle=$request->detalle;
         $i->foto_secundario='';
+        $i->foto_fondo='';
         $i->slug=Str::slug(Str::slug($request->titulo, '-'));
         $i->tipo=$request->tipo;
         $i->save();
@@ -54,6 +55,20 @@ class Iglesias extends Controller
             
         }
 
+        if ($request->hasFile('foto_fondo')) {
+            
+            $extension = $request->foto_fondo->extension();
+            Storage::delete($i->foto_fondo);
+            $path_s = Storage::putFileAs(
+                'public/iglesias', $request->file('foto_fondo'), $i->slug.'_f_f_'.$i->id.'.'.$extension
+            );
+            $i->foto_fondo=$path_s;
+            $i->save();
+        
+        }
+
+        
+
         return redirect()->route('pagina',$request->tipo);
 
     }
@@ -68,7 +83,7 @@ class Iglesias extends Controller
     public function actualizar(Request $request)
     {
         $request->validate([
-            'titulo'=>'required|unique:iglesias,'.$request->id,
+            'titulo'=>'required|unique:iglesias,id,'.$request->id,
             
         ]);
         $i= Iglesia::find($request->id);
@@ -76,7 +91,7 @@ class Iglesias extends Controller
         $i->titulo=$request->titulo;
         $i->detalle=$request->detalle;
         $i->slug=Str::slug(Str::slug($request->titulo, '-'));
-        $i->tipo='Arquitectura Religiosa';
+        
         $i->save();
 
         if ($request->hasFile('foto_principal')) {
@@ -103,6 +118,18 @@ class Iglesias extends Controller
             
         }
 
-        return redirect()->route('arquitecturaReligiosa');
+        if ($request->hasFile('foto_fondo')) {
+            
+            $extension = $request->foto_fondo->extension();
+            Storage::delete($i->foto_fondo);
+            $path_s = Storage::putFileAs(
+                'public/iglesias', $request->file('foto_fondo'), $i->slug.'_f_f_'.$i->id.'.'.$extension
+            );
+            $i->foto_fondo=$path_s;
+            $i->save();
+        
+        }
+
+        return redirect()->route('pagina',$i->tipo);
     }
 }

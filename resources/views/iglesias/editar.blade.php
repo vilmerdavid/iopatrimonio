@@ -15,29 +15,38 @@
                         @csrf
                         <input type="hidden" name="id" value="{{ $iglesia->id }}" id="">
                         <div class="form-group">
-                            <label for="exampleFormControlFile1">Foto principal</label>
-                            <input type="file" name="foto_principal" class="form-control-file" id="exampleFormControlFile1">
+                            <label for="fotoprincipal">Foto principal</label>
+                            <input type="file" name="foto_principal" class="form-control-file" id="fotoprincipal">
                             @if (Storage::exists($iglesia->foto_principal))
                                 <a href="{{ Storage::url($iglesia->foto_principal) }}" target="_blank">ver foto</a>
                             @endif
                           </div>
 
                         <div class="form-group">
-                          <label for="exampleFormControlInput1">Título</label>
-                          <input type="text" name="titulo" value="{{ $iglesia->titulo }}" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                          <label for="titulo">Título</label>
+                          <input type="text" name="titulo" value="{{ $iglesia->titulo }}" class="form-control" id="titulo" placeholder="name@example.com">
                         </div>
                         
                         <div class="form-group">
-                          <label for="exampleFormControlTextarea1">Detalle</label>
-                          <textarea class="form-control" name="detalle" id="exampleFormControlTextarea1" rows="3">{!! $iglesia->detalle !!}</textarea>
+                          <label for="detalle">Detalle</label>
+                          <textarea class="form-control" name="detalle" id="detalle" rows="3">{!! $iglesia->detalle !!}</textarea>
                         </div>
                         <div class="form-group">
-                            <label for="exampleFormControlFile1">Foto secundario</label>
-                            <input type="file" name="foto_secundario" class="form-control-file" id="exampleFormControlFile1">
+                            <label for="fotosecundario">Foto secundario</label>
+                            <input type="file" name="foto_secundario" class="form-control-file" id="fotosecundario">
                             @if (Storage::exists($iglesia->foto_secundario))
                                 <a href="{{ Storage::url($iglesia->foto_secundario) }}" target="_blank">ver foto</a>
                             @endif
                           </div>
+
+                          <div class="form-group">
+                            <label for="fotofondo">Foto de fondo</label>
+                            <input type="file" name="foto_fondo" class="form-control-file" id="fotofondo">
+                            @if (Storage::exists($iglesia->foto_fondo))
+                                <a href="{{ Storage::url($iglesia->foto_fondo) }}" target="_blank">ver foto</a>
+                            @endif
+                          </div>
+
                           <button type="submit" class="btn btn-primary">Guardar</button>
                       </form>
                 </div>

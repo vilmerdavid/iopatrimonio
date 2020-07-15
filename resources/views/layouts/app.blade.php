@@ -58,8 +58,8 @@
     <div id="app">
         <!--Navbar -->
         <nav class="mb-1 navbar navbar-expand-lg navbar-light grey lighten-5">
-        <a class="navbar-brand" href="{{ url('/') }}">
-            <img src="{{ asset('img/logo.png') }}" alt="" height="45px" width="190px">
+        <a class="navbar-brands" href="{{ url('/') }}" class="y-0">
+            <img src="{{ asset('img/logo.png') }}" alt="" height="120px">
         </a>
       
         <div class=" navbar-collapse" id="navbarSupportedContent-333">
@@ -192,7 +192,9 @@
                                 </h1>
                             </a>
                             
-                        <img src="{{ asset('img/utc.png') }}" alt="" class="img-fluid mt-5" width="300px;">
+                        <a href="http://www.utc.edu.ec/" target="_blanck">
+                            <img src="{{ asset('img/utc.png') }}" alt="" class="img-fluid mt-5" width="300px;">
+                        </a>
                     </div>
                 </div>
             </div>

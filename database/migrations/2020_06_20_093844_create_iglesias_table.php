@@ -21,6 +21,7 @@ class CreateIglesiasTable extends Migration
             $table->string('titulo');
             $table->longText('detalle');
             $table->string('foto_secundario');
+            $table->string('foto_fondo');
             $table->string('tipo');
             $table->string('slug');
             

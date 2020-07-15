@@ -13,7 +13,7 @@
                     <a href="{{ route('editarIglesia',$iglesia->id) }}" class="float-right">Editar</a>
                     @endauth
                 </div>
-                <div class="card-body">
+                <div class="card-body" style="background-image: url({{ Storage::url($iglesia->foto_fondo) }}); background-position: center; background-repeat: no-repeat; background-size: cover;" >
                     {!! $iglesia->detalle !!}
                 </div>
             </div>
