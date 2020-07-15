@@ -196,7 +196,7 @@
                         </a>                        
                         <a href="{{ route('quienesSomos') }}" class="btn btn-link text-dark text-right">
                             <h2>
-                                <strong>Investigadores participantes</strong>
+                                <strong>Investigadores</strong>
                             </h2>
                         </a>
 
