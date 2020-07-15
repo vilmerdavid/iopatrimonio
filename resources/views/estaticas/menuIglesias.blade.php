@@ -9,13 +9,15 @@
         <div class="card-header">
             <div class="row justify-content-center text-center">
                 @foreach ($iglesias as $i)
-                <div class="col" id="{{ $i->slug }}">
+                <div class="col" id="">
                     <a href="{{ route('detalleIglesia',$i->slug) }}">
                         <img src="{{ Storage::url($i->foto_principal) }}" alt="" class="img-fluid" title="{{ $i->titulo }}" width="50px">
-                        <small>
+                        
+                        <strong class="text-dark" id="{{ $i->slug }}">
                             <br>
                             {{ $i->titulo }}
-                        </small>
+                        </strong>
+                        
                     </a>
                 </div>
                 @endforeach

@@ -132,4 +132,18 @@ class Iglesias extends Controller
 
         return redirect()->route('pagina',$i->tipo);
     }
+
+    public function eliminar($idI)
+    {
+        $i=Iglesia::findOrFail($idI);
+        try {
+            $i->delete();
+            Storage::delete($i->foto_fondo);
+            Storage::delete($i->foto_secundario);
+            Storage::delete($i->foto_principal);
+        } catch (\Throwable $th) {
+            //throw $th;
+        }
+        return redirect()->route('pagina',$i->tipo);
+    }
 }

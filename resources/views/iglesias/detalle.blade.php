@@ -11,6 +11,7 @@
 
                     @auth
                     <a href="{{ route('editarIglesia',$iglesia->id) }}" class="float-right">Editar</a>
+                    <a href="{{ route('eliminarIglesia',$iglesia->id) }}" class="float-right text-danger mr-2">Eliminar</a>
                     @endauth
                 </div>
                 <div class="card-body" style="background-image: url({{ Storage::url($iglesia->foto_fondo) }}); background-position: center; background-repeat: no-repeat; background-size: cover;" >
@@ -25,6 +26,7 @@
 </div>
 
 <script>
-    $('#{{ $iglesia->slug }}').addClass('bg-info');
+    $('#{{ $iglesia->slug }}').removeClass('text-dark');
+    $('#{{ $iglesia->slug }}').addClass('text-primary');
 </script>
 @endsection

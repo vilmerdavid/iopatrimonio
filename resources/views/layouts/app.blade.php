@@ -66,8 +66,13 @@
             
             <ul class="navbar-nav ml-auto nav-flex-icons">
                 <li class="nav-item">
-                    <a class="nav-link rounded-circle border">
+                    <a class="nav-link rounded-circle border" href="https://www.facebook.com/Patrimonio-Cultural-de-Latacunga-112804147141494/" target="_blanck">
                         <i class="fab fa-facebook fa-2x"></i>
+                    </a>
+                </li>
+                <li class="nav-item ml-1">
+                    <a class="nav-link rounded-circle border" href="https://www.youtube.com/channel/UCvpP-X10j3nRIyKDTixPtEQ?view_as=subscriber" target="_blanck">
+                        <i class="fab fa-youtube fa-2x"></i>
                     </a>
                 </li>
                 <li class="nav-item ml-1">

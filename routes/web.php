@@ -45,6 +45,8 @@ Route::middleware(['auth'])->group(function () {
     Route::post('/guardar-iglesias', 'Iglesias@guardar')->name('guardarIglesia');
     Route::get('/editar-iglesia/{id}', 'Iglesias@editar')->name('editarIglesia');
     Route::post('/actualizar-iglesias', 'Iglesias@actualizar')->name('actualizarIglesia');
+    Route::get('/eliminar-iglesia/{id}', 'Iglesias@eliminar')->name('eliminarIglesia');
+    
     
     
     
