@@ -22,6 +22,10 @@ Route::get('/', function () {
 
 });
 
+Route::get('/quienes-somos', function () {
+    return view('quienesSomos');
+})->name('quienesSomos');
+
 Auth::routes(['register' => false]);
 
 Route::get('/home', 'HomeController@index')->name('home');

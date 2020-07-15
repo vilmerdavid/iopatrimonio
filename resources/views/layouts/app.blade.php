@@ -185,7 +185,13 @@
                         
                     </div>
                     <div class="col-md-6 text-center mt-2">
-                        <h2><strong>QUIÉNES SOMOS</strong></h2>
+                        
+                            <a href="{{ route('quienesSomos') }}" class="btn btn-link text-dark">
+                                <h1>
+                                    <strong>QUIÉNES SOMOS</strong>
+                                </h1>
+                            </a>
+                            
                         <img src="{{ asset('img/utc.png') }}" alt="" class="img-fluid mt-5" width="300px;">
                     </div>
                 </div>
