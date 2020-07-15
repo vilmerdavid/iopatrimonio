@@ -174,14 +174,14 @@
                         <p>Teléfonos: (593) 03 2252205 / 2252307 / 2252346. Extensión 189</p>
                         <p><a href="" class="text-dark">www.utc.edu.</a></p>
                         <p>
-                            <strong>Francisco Ulloa Enríquez.</strong>
+                            <strong>Francisco Ulloa Enríquez</strong>
                             <br>
                             <small>Director del Proyecto Sistema de Gestión del Patrimonio Histórico Cultural de Latacunga</small>
                             <br>
                             <small>francisco.ulloa@utc.edu.ec</small>
                         </p>
                         
-                        <p><strong>Enrique Lanas López .</strong>
+                        <p><strong>Enrique Lanas López</strong>
                             <br>
                             <small>Subdirector</small> <br>
                             <small>manuel.lanas@utc.edu.ec</small>
@@ -189,17 +189,17 @@
                         
                         
                     </div>
-                    <div class="col-md-6 text-center mt-2">
-                        
-                            <a href="{{ route('quienesSomos') }}" class="btn btn-link text-dark">
-                                <h1>
-                                    <strong>QUIÉNES SOMOS</strong>
-                                </h1>
-                            </a>
-                            
+                    <div class="col-md-6 text-right mt-2">
+                                
                         <a href="http://www.utc.edu.ec/" target="_blanck">
-                            <img src="{{ asset('img/utc.png') }}" alt="" class="img-fluid mt-5" width="300px;">
+                            <img src="{{ asset('img/utc.png') }}" alt="" class="img-fluid mt-5 text-right" width="300px;">
+                        </a>                        
+                        <a href="{{ route('quienesSomos') }}" class="btn btn-link text-dark text-right">
+                            <h2>
+                                <strong>Investigadores participantes</strong>
+                            </h2>
                         </a>
+
                     </div>
                 </div>
             </div>

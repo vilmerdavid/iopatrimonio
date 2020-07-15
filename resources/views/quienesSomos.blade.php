@@ -9,7 +9,7 @@
         <section class="team-section text-center dark-grey-text">
       
           <!-- Section heading -->
-          <h3 class="font-weight-bold pb-2 mb-4">Nuestro equipo</h3>
+          <h3 class="font-weight-bold pb-2 mb-4">Investingadores participantes</h3>
           <!-- Section description -->
           <p class="text-muted w-responsive mx-auto mb-5">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit.
