@@ -23,7 +23,7 @@
             <!-- Grid column -->
             <div class="col-lg-6 col-md-12 mb-5 d-md-flex justify-content-between">
               <div class="avatar mb-md-0 mb-4 mx-4">
-                <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(32).jpg" class="rounded z-depth-1 img-fluid" alt="Sample avatar">
+                <img src="{{ asset('img/users/FRANCISCO ULLOA.jpg') }}" class="rounded z-depth-1 img-fluid" alt="Sample avatar" style="width: 750px; height: 500px;">
                 
                 <div class="card-body text-center">
                     <!-- Facebook-->
@@ -49,6 +49,8 @@
                     <li>Magister en ciencias de la educación superior - Universidad de La Habana / Cuba</li>
                     <li>Doctor en ciencias de la educación (PhD) - Universidad de La Habana / Cuba</li>
                     <li>ORCID ID: https://orcid.org/0000-0002-5405-4720</li>
+
+                    
                 </ul>
                 
               </div>
@@ -58,7 +60,7 @@
             <!-- Grid column -->
             <div class="col-lg-6 col-md-12 mb-5 d-md-flex justify-content-between">
               <div class="avatar mb-md-0 mb-4 mx-4">
-                <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(32).jpg" class="rounded z-depth-1 img-fluid" alt="Sample avatar">
+                <img src="{{ asset('img/users/ENRIQUE LANAS.jpg') }}" class="rounded z-depth-1 img-fluid" style="width: 750px; height: 500px;" alt="Sample avatar">
                 <div class="card-body">
                     <!-- Facebook-->
                     <a class="p-2 fa-lg fb-ic">
@@ -100,7 +102,7 @@
             <!-- Grid column -->
             <div class="col-lg-6 col-md-12 mb-5 d-md-flex justify-content-between">
               <div class="avatar mb-md-0 mb-4 mx-4">
-                <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(32).jpg" class="rounded z-depth-1 img-fluid" alt="Sample avatar">
+                <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(32).jpg" class="rounded z-depth-1 img-fluid" style="width: 750px; height: 500px;" alt="Sample avatar">
                 <div class="card-body text-center">
                     <!-- Facebook-->
                     <a class="p-2 fa-lg fb-ic">
@@ -135,9 +137,8 @@
             <!-- Grid column -->
             <div class="col-lg-6 col-md-12 mb-5 d-md-flex justify-content-between">
               <div class="avatar mb-md-0 mb-4 mx-4">
-                <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(32).jpg" class="rounded z-depth-1 img-fluid img-fluid"
-                  alt="Sample avatar">
-                  <div class="card-body">
+                <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(32).jpg" class="rounded z-depth-1 img-fluid img-fluid" style="width: 750px; height: 500px;" alt="Sample avatar">
+                  <div class="card-body text-center">
                     <!-- Google +-->
                     <a class="p-2 fa-lg gplus-ic">
                         <i class="fab fa-google-plus-g"> </i>
@@ -179,8 +180,8 @@
             <!-- Grid column -->
             <div class="col-lg-6 col-md-12 mb-5 d-md-flex justify-content-between">
               <div class="avatar mb-md-0 mb-4 mx-4">
-                <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(32).jpg" class="rounded z-depth-1 img-fluid" alt="Sample avatar">
-                <div class="card-body">
+                <img src="{{ asset('img/users/MARIO BANDA.jpg') }}" class="rounded z-depth-1 img-fluid" style="width: 750px; height: 500px;" alt="Sample avatar">
+                <div class="card-body text-center">
                     <!-- Facebook-->
                     <a class="p-2 fa-lg fb-ic">
                         <i class="fab fa-facebook-f"> </i>
@@ -215,8 +216,8 @@
             <!-- Grid column -->
             <div class="col-lg-6 col-md-12 mb-5 d-md-flex justify-content-between">
               <div class="avatar mb-md-0 mb-4 mx-4">
-                <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(32).jpg" class="rounded z-depth-1 img-fluid" alt="Sample avatar">
-                <div class="card-body">
+                <img src="{{ asset('img/users/JUAN PABLO TORO.jpg') }}" class="rounded z-depth-1 img-fluid" style="width: 750px; height: 500px;" alt="Sample avatar">
+                <div class="card-body text-center">
                     <!-- Facebook-->
                     <a class="p-2 fa-lg fb-ic">
                         <i class="fab fa-facebook-f"> </i>
@@ -256,8 +257,8 @@
             <!-- Grid column -->
             <div class="col-lg-6 col-md-12 mb-5 d-md-flex justify-content-between">
               <div class="avatar mb-md-0 mb-4 mx-4">
-                <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(32).jpg" class="rounded z-depth-1 img-fluid" alt="Sample avatar">
-                <div class="card-body">
+                <img src="{{ asset('img/users/JORGE ROSERO.jpg') }}" class="rounded z-depth-1 img-fluid" style="width: 750px; height: 500px;" alt="Sample avatar">
+                <div class="card-body text-center">
                     <!-- Facebook-->
                     <a class="p-2 fa-lg fb-ic">
                         <i class="fab fa-facebook-f"> </i>
@@ -292,9 +293,8 @@
             <!-- Grid column -->
             <div class="col-lg-6 col-md-12 mb-5 d-md-flex justify-content-between">
               <div class="avatar mb-md-0 mb-4 mx-4">
-                <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(32).jpg" class="rounded z-depth-1 img-fluid img-fluid"
-                  alt="Sample avatar">
-                  <div class="card-body">
+                <img src="{{ asset('img/users/RAUL CÁRDENAS.jpg') }}" class="rounded z-depth-1 img-fluid img-fluid" style="width: 750px; height: 500px;" alt="Sample avatar">
+                  <div class="card-body text-center">
                       <!-- Google +-->
                     <a class="p-2 fa-lg gplus-ic">
                         <i class="fab fa-google-plus-g"> </i>
@@ -337,8 +337,8 @@
             <!-- Grid column -->
             <div class="col-lg-6 col-md-12 mb-5 d-md-flex justify-content-between">
               <div class="avatar mb-md-0 mb-4 mx-4">
-                <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(32).jpg" class="rounded z-depth-1 img-fluid" alt="Sample avatar">
-                <div class="card-body">
+                <img src="{{ asset('img/users/NATALIA ZAPATA.jpg') }}" class="rounded z-depth-1 img-fluid" style="width: 750px; height: 500px;" alt="Sample avatar">
+                <div class="card-body text-center">
                     <!-- Facebook-->
                     <a class="p-2 fa-lg fb-ic">
                         <i class="fab fa-facebook-f"> </i>
@@ -372,9 +372,8 @@
             <!-- Grid column -->
             <div class="col-lg-6 col-md-12 mb-5 d-md-flex justify-content-between">
               <div class="avatar mb-md-0 mb-4 mx-4">
-                <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(32).jpg" class="rounded z-depth-1 img-fluid img-fluid"
-                  alt="Sample avatar">
-                  <div class="card-body">
+                <img src="{{ asset('img/users/PAOLA TAPIA.jpg') }}" class="rounded z-depth-1 img-fluid img-fluid" style="width: 750px; height: 500px;" alt="Sample avatar">
+                  <div class="card-body text-center">
                       <!-- Google +-->
                     <a class="p-2 fa-lg gplus-ic">
                         <i class="fab fa-google-plus-g"> </i>
