@@ -15,16 +15,17 @@
 
 
           <li>
-            <a class="dropdown-item" href="{{ route('pagina','arquitectura-religiosa') }}">Arquitectura Religiosa</a>
+            <a class="dropdown-item" href="{{ route('pagina','Arquitectura Religiosa') }}">Arquitectura Religiosa</a>
           </li>
 
           <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Arquitectura Civíl</a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Equipamiento Urbano</a></li>
-              <li><a class="dropdown-item" href="#">Monumentos</a></li>
+              <li><a class="dropdown-item" href="{{ route('pagina', 'Equipamiento Urbano') }}">Equipamiento Urbano</a></li>
+              <li><a class="dropdown-item" href="{{ route('pagina','Monumentos') }}">Monumentos</a></li>
 
               
               <li><a class="dropdown-item" href="#">Más</a></li>
+              
               
 
               {{--  <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Submenu 1</a>
@@ -42,7 +43,7 @@
 
             </ul>
           </li>
-          <li><a class="dropdown-item" href="/">Bienes Muebles</a></li>
+          <li><a class="dropdown-item" href="{{ route('pagina','Bienes Muebles') }}">Bienes Muebles</a></li>
           
 
         </ul>
@@ -53,11 +54,11 @@
           Patrimonio Intangible
         </a>
         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <li><a class="dropdown-item" href="/">Mama Negra</a></li>
-          <li><a class="dropdown-item" href="/">Danzante del Sol</a></li>
-          <li><a class="dropdown-item" href="/">Caporales de Angamarca</a></li>
-          <li><a class="dropdown-item" href="/">Fiesta de San Miguel de Salcedo</a></li>
-          <li><a class="dropdown-item" href="/">Niño de Isinche</a></li>
+          <li><a class="dropdown-item" href="{{ route('pagina','Mama Negra') }}">Mama Negra</a></li>
+          <li><a class="dropdown-item" href="{{ route('pagina','Danzante del Sol') }}">Danzante del Sol</a></li>
+          <li><a class="dropdown-item" href="{{ route('pagina','Caporales de Angamarca') }}">Caporales de Angamarca</a></li>
+          <li><a class="dropdown-item" href="{{ route('pagina','Fiesta de San Miguel de Salcedo') }}">Fiesta de San Miguel de Salcedo</a></li>
+          <li><a class="dropdown-item" href="{{ route('pagina','Niño de Isinche') }}">Niño de Isinche</a></li>
         </ul>
     </li>
 
@@ -66,9 +67,9 @@
           Patrimonio natural
         </a>
         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <li><a class="dropdown-item" href="/">Parque Nacional Cotopaxi</a></li>
-          <li><a class="dropdown-item" href="/">Parque Nacional LLanganates</a></li>
-          <li><a class="dropdown-item" href="/">Reserva Ecológica Illinizas</a></li>
+          <li><a class="dropdown-item" href="{{ route('pagina','Parque Nacional Cotopaxi') }}">Parque Nacional Cotopaxi</a></li>
+          <li><a class="dropdown-item" href="{{ route('pagina','Parque Nacional LLanganates') }}">Parque Nacional LLanganates</a></li>
+          <li><a class="dropdown-item" href="{{ route('pagina','Reserva Ecológica Illinizas') }}">Reserva Ecológica Illinizas</a></li>
         </ul>
     </li>
 
@@ -77,10 +78,10 @@
           Información Patrimonial
         </a>
         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <li><a class="dropdown-item" href="/">Kinkiyary</a></li>
-          <li><a class="dropdown-item" href="/">Ucumamayaya TV</a></li>
-          <li><a class="dropdown-item" href="/">Panzaleito</a></li>
-          <li><a class="dropdown-item" href="/">Libros y/o Artículos</a></li>
+          <li><a class="dropdown-item" href="{{ route('pagina','Kinkiyary') }}">Kinkiyary</a></li>
+          <li><a class="dropdown-item" href="{{ route('pagina','Ucumamayaya TV') }}">Ucumamayaya TV</a></li>
+          <li><a class="dropdown-item" href="{{ route('pagina','Panzaleito') }}">Panzaleito</a></li>
+          <li><a class="dropdown-item" href="{{ route('pagina','Libros y/o Artículos') }}">Libros y/o Artículos</a></li>
           
         </ul>
     </li>
@@ -91,15 +92,23 @@
           Normativa
         </a>
         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <li><a class="dropdown-item" href="/">Internacional</a></li>
-          <li><a class="dropdown-item" href="/">Nacional</a></li>
-          <li><a class="dropdown-item" href="/">Local</a></li>
+          <li><a class="dropdown-item" href="{{ route('pagina','Internacional') }}">Internacional</a></li>
+          <li><a class="dropdown-item" href="{{ route('pagina','Nacional') }}">Nacional</a></li>
+          <li><a class="dropdown-item" href="{{ route('pagina','Local') }}">Local</a></li>
         </ul>
     </li>
 
     <li class="nav-item">
         <a class="nav-link" href="#">Más</a>
     </li>
+
+    @auth
+    <li class="nav-item">
+        <a class="nav-link" href="{{ route('administracion') }}">Administración</a>
+    </li>
+    @endauth
+
+    
     
 
 </ul>

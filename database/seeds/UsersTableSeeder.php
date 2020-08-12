@@ -22,5 +22,28 @@ class UsersTableSeeder extends Seeder
             $user->password =Hash::make($email);
             $user->save();
         }
+
+
+
+        // Arquitectura Religiosa
+        // Equipamiento Urbano
+        // Monumentos
+        // Bienes Muebles
+        // Mama Negra
+        // Danzante del Sol
+        // Caporales de Angamarca
+        // Fiesta de San Miguel de Salcedo
+        // Niño de Isinche
+        // Parque Nacional Cotopaxi
+        // Parque Nacional LLanganates
+        // Reserva Ecológica Illinizas
+        // Kinkiyary
+        // Ucumamayaya TV
+        // Panzaleito
+        // Libros y/o Artículos
+        // Internacional
+        // Nacional
+        // Local
+
     }
 }

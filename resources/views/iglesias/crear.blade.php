@@ -13,7 +13,33 @@
                 <div class="card-body">
                     <form action="{{ route('guardarIglesia') }}" method="POST" enctype="multipart/form-data">
                         @csrf
-                        <input type="hidden" name="tipo" value="{{ $tipo }}">
+                        
+                        <div class="form-group">
+                          <label for="tipo">Selecione un tipo</label>
+                          <select class="form-control" name="tipo" id="tipo">
+                            <option value="Arquitectura Religiosa">Arquitectura Religiosa</option>
+                            <option value="Equipamiento Urbano">Equipamiento Urbano</option>
+                            <option value="Monumentos">Monumentos</option>
+                            <option value="Bienes Muebles">Bienes Muebles</option>
+                            <option value="Mama Negra">Mama Negra</option>
+                            <option value="Danzante del Sol">Danzante del Sol</option>
+                            <option value="Caporales de Angamarca">Caporales de Angamarca</option>
+                            <option value="Fiesta de San Miguel de Salcedo">Fiesta de San Miguel de Salcedo</option>
+                            <option value="Niño de Isinche">Niño de Isinche</option>
+                            <option value="Parque Nacional Cotopaxi">Parque Nacional Cotopaxi</option>
+                            <option value="Parque Nacional LLanganates">Parque Nacional LLanganates</option>
+                            <option value="Reserva Ecológica Illinizas">Reserva Ecológica Illinizas</option>
+                            <option value="Kinkiyary">Kinkiyary</option>
+                            <option value="Ucumamayaya TV">Ucumamayaya TV</option>
+                            <option value="Panzaleito">Panzaleito</option>
+                            <option value="Libros y/o Artículos">Libros y/o Artículos</option>
+                            <option value="Internacional">Internacional</option>
+                            <option value="Nacional">Nacional</option>
+                            <option value="Local">Local</option>
+
+                          </select>
+                        </div>
+
                         <div class="form-group">
                             <label for="fotoprincipal">Foto principal</label>
                             <input type="file" name="foto_principal" class="form-control-file" id="fotoprincipal">

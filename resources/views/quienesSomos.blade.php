@@ -102,7 +102,7 @@
             <!-- Grid column -->
             <div class="col-lg-6 col-md-12 mb-5 d-md-flex justify-content-between">
               <div class="avatar mb-md-0 mb-4 mx-4">
-                <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(32).jpg" class="rounded z-depth-1 img-fluid" style="width: 750px; height: 500px;" alt="Sample avatar">
+                <img src="{{ asset('img/users/AM.jpg') }}" class="rounded z-depth-1 img-fluid" style="width: 750px; height: 500px;" alt="Sample avatar">
                 <div class="card-body text-center">
                     <!-- Facebook-->
                     <a class="p-2 fa-lg fb-ic">
@@ -137,7 +137,7 @@
             <!-- Grid column -->
             <div class="col-lg-6 col-md-12 mb-5 d-md-flex justify-content-between">
               <div class="avatar mb-md-0 mb-4 mx-4">
-                <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(32).jpg" class="rounded z-depth-1 img-fluid img-fluid" style="width: 750px; height: 500px;" alt="Sample avatar">
+                <img src="{{ asset('img/users/LA.jpg') }}" class="rounded z-depth-1 img-fluid img-fluid" style="width: 750px; height: 500px;" alt="Sample avatar">
                   <div class="card-body text-center">
                     <!-- Google +-->
                     <a class="p-2 fa-lg gplus-ic">

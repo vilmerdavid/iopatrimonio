@@ -1,8 +1,5 @@
 {{-- si esta usuario conectado , mostrar opcion --}}
 <div class="container-fluid">
-@auth
-    <a href="{{ route('crearIglesias',$tipo) }}" class="link">Crear nueva Iglesia</a>    
-@endauth
 @if (count($iglesias)>0)
 
     <div class="card">

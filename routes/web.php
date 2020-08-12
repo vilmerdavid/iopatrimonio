@@ -41,14 +41,14 @@ Route::get('/iglesia/{slug}', 'Estaticas@detalleIglesia')->name('detalleIglesia'
 // rutas que requieren autenticacion
 // crear iglesias
 Route::middleware(['auth'])->group(function () {
-    Route::get('/crear-iglesias/{tipo}', 'Iglesias@crear')->name('crearIglesias');
-    Route::post('/guardar-iglesias', 'Iglesias@guardar')->name('guardarIglesia');
-    Route::get('/editar-iglesia/{id}', 'Iglesias@editar')->name('editarIglesia');
-    Route::post('/actualizar-iglesias', 'Iglesias@actualizar')->name('actualizarIglesia');
-    Route::get('/eliminar-iglesia/{id}', 'Iglesias@eliminar')->name('eliminarIglesia');
     
-    
-    
+    // administracion
+    Route::get('/crear-iglesias', 'Administracion@crear')->name('crearIglesias');
+    Route::get('/administracion', 'Administracion@index')->name('administracion');
+    Route::post('/guardar-iglesias', 'Administracion@guardar')->name('guardarIglesia');
+    Route::get('/editar-iglesia/{id}', 'Administracion@editar')->name('editarIglesia');
+    Route::post('/actualizar-iglesias', 'Administracion@actualizar')->name('actualizarIglesia');
+    Route::get('/eliminar-iglesia/{id}', 'Administracion@eliminar')->name('eliminarIglesia');
     
 });
 
