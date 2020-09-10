@@ -49,6 +49,11 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/editar-iglesia/{id}', 'Administracion@editar')->name('editarIglesia');
     Route::post('/actualizar-iglesias', 'Administracion@actualizar')->name('actualizarIglesia');
     Route::get('/eliminar-iglesia/{id}', 'Administracion@eliminar')->name('eliminarIglesia');
+
+
+    // videos
+    Route::get('/videos/{tipo}', 'Videos@index')->name('videos');
+    Route::post('/videos-guardar', 'Videos@guardar')->name('guardarVideos');
     
 });
 

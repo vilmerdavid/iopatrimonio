@@ -79,7 +79,7 @@
         </a>
         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
           <li><a class="dropdown-item" href="{{ route('pagina','Kinkiyary') }}">Kinkiyary</a></li>
-          <li><a class="dropdown-item" href="{{ route('pagina','Ucumamayaya TV') }}">Ucumamayaya TV</a></li>
+          <li><a class="dropdown-item" href="{{ route('videos','Ucumamayaya TV') }}">Ucumamayaya TV</a></li>
           <li><a class="dropdown-item" href="{{ route('pagina','Panzaleito') }}">Panzaleito</a></li>
           <li><a class="dropdown-item" href="{{ route('pagina','Libros y/o Artículos') }}">Libros y/o Artículos</a></li>
           

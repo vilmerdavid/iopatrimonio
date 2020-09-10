@@ -1,9 +1,9 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
+<div class="container-fluid">
     <div class="row justify-content-center">
-        <div class="col-md-8">
+        <div class="col-md-6">
             <div class="card">
                 <div class="card-header">
                     Iglesias
@@ -67,6 +67,40 @@
                 </div>
                 <div class="card-footer">
                     {{ $iglesias->links() }}
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    <form action="{{ route('guardarVideos') }}" method="POST">
+                        @csrf
+                        <div class="form-group">
+                          <label for="exampleInputEmail1">Url de video</label>
+                          <input type="url" class="form-control" id="exampleInputEmail1" name="url" aria-describedby="emailHelp" placeholder="Ingrese url">
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleInputPassword1">Título de video</label>
+                          <input type="text" class="form-control" id="exampleInputPassword1" name="titulo" placeholder="Ingrese título">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1">Tipo</label>
+                            <select class="form-control" id="exampleFormControlSelect1" name="tipo">
+                              <option value="Ucumamayaya TV">Ucumamayaya TV</option>
+                              <option value="Panzaleito">Panzaleito</option>
+                            </select>
+                          </div>
+
+                        <button type="submit" class="btn btn-primary">Guardar</button>
+                    </form>
+                </div>
+                <div class="card-body">
+                    <h4 class="card-title">Title</h4>
+                    <p class="card-text">Text</p>
+                </div>
+                <div class="card-footer text-muted">
+                    Footer
                 </div>
             </div>
         </div>
