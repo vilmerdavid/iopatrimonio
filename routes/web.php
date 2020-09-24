@@ -35,7 +35,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/pagina/{tipo}', 'Estaticas@arquitecturaReligiosa')->name('pagina');
 Route::get('/iglesia/{slug}', 'Estaticas@detalleIglesia')->name('detalleIglesia');
 
-
+Route::get('/videos/{tipo}', 'Videos@index')->name('videos');
 
 
 // rutas que requieren autenticacion
@@ -52,7 +52,7 @@ Route::middleware(['auth'])->group(function () {
 
 
     // videos
-    Route::get('/videos/{tipo}', 'Videos@index')->name('videos');
+    
     Route::post('/videos-guardar', 'Videos@guardar')->name('guardarVideos');
     Route::get('/videos-eliminar/{id}', 'Videos@eliminar')->name('eliminarVideos');
     Route::post('/videos-actualizar', 'Videos@actualizar')->name('actualizarVideo');
