@@ -7,7 +7,7 @@
             <div class="card card-body">
                 @if ($ultimoVideo)
                     <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com/watch?v=KuDP3cEbcTo&list=RDKuDP3cEbcTo&index=1" allowfullscreen></iframe>
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/1L48Q4o0gRo" allowfullscreen></iframe>
                     </div>
                     <h1>{{ $ultimoVideo->titulo }}</h1>
                 @endif
@@ -22,7 +22,7 @@
                     
                         <li class="list-group-item">
                             <div class="embed-responsive embed-responsive-16by9">
-                                <iframe class="embed-responsive-item" src="{{ $vi->url }}" allowfullscreen></iframe>
+                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/1L48Q4o0gRo" allowfullscreen></iframe>
                             </div>
                             <small><strong>{{ $vi->titulo }}</strong></small>
                             
