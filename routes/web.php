@@ -54,6 +54,8 @@ Route::middleware(['auth'])->group(function () {
     // videos
     Route::get('/videos/{tipo}', 'Videos@index')->name('videos');
     Route::post('/videos-guardar', 'Videos@guardar')->name('guardarVideos');
+    Route::get('/videos-eliminar/{id}', 'Videos@eliminar')->name('eliminarVideos');
+    Route::post('/videos-actualizar', 'Videos@actualizar')->name('actualizarVideo');
     
 });
 

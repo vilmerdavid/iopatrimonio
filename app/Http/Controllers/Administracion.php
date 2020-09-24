@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Iglesia;
+use App\Video;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
 use Illuminate\Support\Facades\Storage;
@@ -17,7 +18,10 @@ class Administracion extends Controller
     public function index()
     {
         $iglesias=Iglesia::latest()->paginate(10);
-        $data = array('iglesias' => $iglesias );
+        $data = array(
+            'iglesias' => $iglesias ,
+            'videos'=>Video::latest()->get()
+        );
         return view('administracion.index',$data);
     }
     public function crear()

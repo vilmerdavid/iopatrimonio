@@ -7,7 +7,7 @@
             <div class="card card-body">
                 @if ($ultimoVideo)
                     <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/1L48Q4o0gRo" allowfullscreen></iframe>
+                        <iframe class="embed-responsive-item" src="{{ $ultimoVideo->url }}" allowfullscreen></iframe>
                     </div>
                     <h1>{{ $ultimoVideo->titulo }}</h1>
                 @endif
@@ -18,14 +18,15 @@
                 
                 @if (count($videos)>0)
                 <ul class="list-group list-group-flush">    
+
                     @foreach ($videos as $vi)
                     
                         <li class="list-group-item">
                             <div class="embed-responsive embed-responsive-16by9">
-                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/1L48Q4o0gRo" allowfullscreen></iframe>
+                                <iframe class="embed-responsive-item" src="{{ $vi->url }}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                
                             </div>
                             <small><strong>{{ $vi->titulo }}</strong></small>
-                            
                         </li>
                       
                     @endforeach
